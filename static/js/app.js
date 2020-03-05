@@ -27,8 +27,6 @@ populate_table(tableData)
 
 // METHOD 2- Alternative approach - this approach is a bit more straightforward and doesn't require defining columns
 // However, the disadvantage is that if any of the reports have different number of fields the append will be 'off' when populating the table
-// 14_03_03-Evr_D3_Table
-// 14_02_07-Ins_Object_Iteration <- more relevant
 // Use `Object.values` and `forEach` to iterate through values
 
 // function populate_table(data){
