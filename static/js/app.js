@@ -80,6 +80,7 @@ function filter_populate_table() {
     if (filtered_data.length != 0) {
         populate_table(filtered_data);
         }
+        
     // if the filtered_data is 0 that means there were no hits, so populate the table via function defined earlier
     else if (filtered_data.length === 0)
         //alert(`No records found for ${datetime_input}`)
