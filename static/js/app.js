@@ -1,13 +1,11 @@
 // from data.js
 var tableData = data;
 
-
-
 // Create columns for date/time, city, state, country, shape, and comment at the very least.
 var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 
-// Use a date form in your HTML document and 
-// write JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
+// Used a date form in the HTML document and 
+// the JavaScript code below will listen for events and search through the date/time column to find rows that match user input.
 
 var filter_table_button = d3.select("#filter-btn"); 
 var tbody = d3.select("tbody");
