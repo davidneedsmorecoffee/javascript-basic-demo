@@ -27,8 +27,8 @@ populate_table(tableData)
 
 // METHOD 2- Alternative approach - this approach is a bit more straightforward as it doesn't require defining columns
 // However, the disadvantage is that if any of the reports have different number of fields the append will be 'off' when populating the table
-// Use `Object.values` and `forEach` to iterate through values
 
+// Use `Object.values` and `forEach` to iterate through values
 // function populate_table(data){
 //     data.forEach((report) => {
 //         // for each report, append tr (table row) to the tbody
