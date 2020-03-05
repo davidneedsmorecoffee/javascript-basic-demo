@@ -1,7 +1,7 @@
 // from data.js
 var tableData = data;
 
-// Create columns for date/time, city, state, country, shape, and comment at the very least.
+// Create columns for date/time, city, state, country, shape, and comment.
 var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 
 // Used a date form in the HTML document and 
