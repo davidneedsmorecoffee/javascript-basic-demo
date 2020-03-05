@@ -10,7 +10,7 @@ var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes
 var filter_table_button = d3.select("#filter-btn"); 
 var tbody = d3.select("tbody");
 
-// METHOD 2 - this one uses the columns defined earlier
+// METHOD 1 - this method uses the columns defined earlier
 // advantage of this method is that if the data.js has missing data the cell will be blank in the table
 function populate_table(tableData){
     tableData.forEach((report) => {
@@ -26,8 +26,7 @@ function populate_table(tableData){
 }
 populate_table(tableData) 
 
-
-// METHOD 1 - the syntax method is a bit more straightforward and doesn't require defining columns
+// METHOD 2- Alternative method - the syntax method is a bit more straightforward and doesn't require defining columns
 // but the disadvantage is that if any of the reports have different number of fields the append will be 'off' when populating the table
 // 14_03_03-Evr_D3_Table
 // 14_02_07-Ins_Object_Iteration <- more relevant
@@ -56,6 +55,7 @@ filter_table_button.on("click", filter_populate_table)
 // this is a way to get around it so that both pressing the Enter or clicking on the Filter by Date button both work
 // https://stackoverflow.com/questions/12642571/call-a-function-when-the-enter-button-is-pressed-via-javascript
 // https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit
+
 document.getElementById('datetime').onkeydown = function(event) {
     if (event.keyCode === 13) {
         event.preventDefault(); // no need for this line if <form> and </form> on lines 35 and 45 of the html file is commented out
@@ -88,4 +88,3 @@ function filter_populate_table() {
         //alert(`No records found for ${datetime_input}`)
         tbody.append("td").text(`No records found!`); 
 }
-
