@@ -3,7 +3,7 @@ var tableData = data;
 
 
 
-// Make sure you have a column for date/time, city, state, country, shape, and comment at the very least.
+// Create columns for date/time, city, state, country, shape, and comment at the very least.
 var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"]
 
 // Use a date form in your HTML document and 
