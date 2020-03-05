@@ -6,7 +6,6 @@ var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes
 
 // Used a date form in the HTML document and 
 // the JavaScript code below will listen for events and search through the date/time column to find rows that match user input.
-
 var filter_table_button = d3.select("#filter-btn"); 
 var tbody = d3.select("tbody");
 
