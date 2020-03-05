@@ -1,7 +1,8 @@
 ## JavaScript demo
 
 In this demo, a basic HTML webpage was built with JavaScript objects.
- 
+* Download the repo and run index.html to see the page in action.
+* Alternatively, screenshots are also available in the `screenshots` folder.
 
 ### Basic overview of code
 * Sample set of data (`data.js`) which describes various UFO sightings was used in the form of an array of JavaScript objects.
