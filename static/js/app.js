@@ -9,7 +9,7 @@ var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes
 var filter_table_button = d3.select("#filter-btn"); 
 var tbody = d3.select("tbody");
 
-// METHOD 1 - this method uses the columns defined earlier
+// METHOD 1 - this approach uses the columns defined earlier
 // advantage of this method is that if the data.js has missing data the cell will be blank in the table
 function populate_table(tableData){
     tableData.forEach((report) => {
