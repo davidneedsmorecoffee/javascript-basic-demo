@@ -10,7 +10,7 @@ var filter_table_button = d3.select("#filter-btn");
 var tbody = d3.select("tbody");
 
 // METHOD 1 - this approach uses the columns defined earlier
-// advantage of this method is that if the data.js has missing data the cell will be blank in the table
+// advantage of this approach is that if the data.js has missing data the cell will be blank in the table
 function populate_table(tableData){
     tableData.forEach((report) => {
         // for each report, append tr (table row) to the tbody
@@ -25,8 +25,8 @@ function populate_table(tableData){
 }
 populate_table(tableData) 
 
-// METHOD 2- Alternative method - the syntax method is a bit more straightforward and doesn't require defining columns
-// but the disadvantage is that if any of the reports have different number of fields the append will be 'off' when populating the table
+// METHOD 2- Alternative approach - this approach is a bit more straightforward and doesn't require defining columns
+// However, the disadvantage is that if any of the reports have different number of fields the append will be 'off' when populating the table
 // 14_03_03-Evr_D3_Table
 // 14_02_07-Ins_Object_Iteration <- more relevant
 // Use `Object.values` and `forEach` to iterate through values
